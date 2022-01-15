@@ -21,7 +21,7 @@ title                    : "머릿속 정리정돈"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "JeongBeen Seo"
-description              : "An amazing website."
+description              : "안녕하세요"
 url                      : "https://claire-1125.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,8 +106,8 @@ author:
   name             : "JeongBeen Seo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "물리로 시작해서 IT를 거쳐 인공지능 분야로 향하고 있습니다."
-  location         : "Republic of Korea"
-  email            : "sjb2774@naver.com"
+  location         : "South Korea"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -219,7 +219,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
