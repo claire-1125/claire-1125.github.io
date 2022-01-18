@@ -1,0 +1,59 @@
+# 이론공부
+
+## 스택 (Stack)
+
+### 스택 (Stack)
+
+![stack.jpg](%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A9%E1%86%AB%E1%84%80%E1%85%A9%E1%86%BC%E1%84%87%E1%85%AE%20a1ecdf80a25d43cca5c74d374b1aef4a/stack.jpg)
+
+- L**IFO (last-in first-out)** : 가장 늦게 들어간 얘가 가장 먼저 나간다. e.g.) 돌탑쌓기
+- 스택의 추상 데이터 타입 (Stack ADT)
+    - 데이터 : 유한한 길이를 가지는 순서 리스트
+    - 연산 (진짜 중요한 기능만 넣음.)
+        - **push** : top에서 새로운 원소 삽입
+        - **pop** : top에서 원소 빼내며 삭제
+
+## 큐 (Queue)
+
+### 큐 (Queue)
+
+![KakaoTalk_20211129_005834201.jpg](%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A9%E1%86%AB%E1%84%80%E1%85%A9%E1%86%BC%E1%84%87%E1%85%AE%20a1ecdf80a25d43cca5c74d374b1aef4a/KakaoTalk_20211129_005834201.jpg)
+
+- **FIFO (first-in first-out)** : 뒤로 들어와서 앞으로 나간다. e.g.) 한줄서기
+- 큐의 추상 데이터 타입 (Queue ADT)
+    - 데이터 : 유한한 길이를 가지는 순서 리스트
+    - 연산 (진짜 중요한 기능만 넣음.)
+        - **enqueue** : rear에서 새로운 원소 삽입
+        - **dequeue** : front에서 원소 빼내며 삭제
+
+### 우선순위 큐 (priority queue)
+
+- **가장 높은** 우선순위부터 **삭제**하는 큐
+- 삽입할 때는 임의의 순서대로 진행.
+- **들어올 땐 마음대로지만 나갈 땐 아니란다.**
+
+### 덱 (Deque)
+
+![KakaoTalk_20211128_235822685.jpg](%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A9%E1%86%AB%E1%84%80%E1%85%A9%E1%86%BC%E1%84%87%E1%85%AE%20a1ecdf80a25d43cca5c74d374b1aef4a/KakaoTalk_20211128_235822685.jpg)
+
+- double ended queue
+- 큐의 **front와 rear**에서 모두 **삽입·삭제**가 가능한 큐
+- 파이썬 collections 모듈 내 deque
+    
+    ```python
+    from collections import deque
+    
+    deq = deque()
+    
+    # Add element to the start
+    deq.appendleft(10)
+    
+    # Add element to the end
+    deq.append(0)
+    
+    # Pop element from the start
+    deq.popleft()
+    
+    # Pop element from the end
+    deq.pop()
+    ```
