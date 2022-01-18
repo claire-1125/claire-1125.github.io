@@ -1,10 +1,17 @@
-# 이론공부
+---
+title: "[ 데이터구조 ]  Stack, Queue"
+date: 2022-01-09
+excerpt: "stack과 queue에 대해 알아봅시다."
+categories: 데이터구조
+---
 
 ## 스택 (Stack)
 
 ### 스택 (Stack)
 
-![stack.jpg](%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A9%E1%86%AB%E1%84%80%E1%85%A9%E1%86%BC%E1%84%87%E1%85%AE%20a1ecdf80a25d43cca5c74d374b1aef4a/stack.jpg)
+![1.jpg](/assets/images/posts/data_structure/stack&queue/1.jpg){: width="400"}
+
+
 
 - L**IFO (last-in first-out)** : 가장 늦게 들어간 얘가 가장 먼저 나간다. e.g.) 돌탑쌓기
 - 스택의 추상 데이터 타입 (Stack ADT)
