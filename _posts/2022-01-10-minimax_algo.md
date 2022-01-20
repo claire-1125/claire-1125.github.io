@@ -11,7 +11,7 @@ categories:
 
 ## Intelligent (Rational) Agent란 무엇인가?
 
-![1.png](/assets/images/posts/POSCO_AI_project/gan1/1.png){: width="400"}
+![1.png](/assets/images/posts/POSCO_AI_project/minimax/1.png){: width="400"}
 
 - agent가 하는 일
     - perceive its environment through sensor (주변 환경 인지)
@@ -45,7 +45,7 @@ agent는 environment와의 상호작용을 통해 action을 취하므로 환경�
 
 # Minimax Algorithm
 
-![2.png](/assets/images/posts/POSCO_AI_project/gan1/2.png){: width="400"}
+![2.png](/assets/images/posts/POSCO_AI_project/minimax/2.png){: width="400"}
 
 MAX 기준으로 tree 그림 (MAX 이기는 경우에 utility가 +1)
 
@@ -62,4 +62,4 @@ MAX 기준으로 tree 그림 (MAX 이기는 경우에 utility가 +1)
 ## Optimal Decisions in Games : Minimax Algo.
 - optimal decision : 상대방이 (그 선택권 안에서) 최선의 선택을 한다고 가정
 
-    ![3.jpg](/assets/images/posts/POSCO_AI_project/gan1/3.jpg){: width="400"}
+    ![3.jpg](/assets/images/posts/POSCO_AI_project/minimax/3.jpg){: width="400"}
