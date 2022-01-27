@@ -16,15 +16,15 @@
 minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko_KR" #"en-US"
-title                    : "머릿속 정리정돈"
+locale                   : "ko_KR" #"en-US"  # 블로그의 주요 언어
+title                    : "머릿속 정리정돈"  # 사이트 탭에서 보이는 이름
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JeongBeen Seo"
-description              : "안녕하세요"
+subtitle                 : # 화면 title 하단에 있는 소제목
+name                     : "JeongBeen Seo"  # footer에 보여지는 이름
+description              : ""
 url                      : "https://claire-1125.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "https://github.com/claire-1125" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
