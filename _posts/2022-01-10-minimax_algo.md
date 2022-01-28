@@ -4,6 +4,8 @@ date: 2022-01-10
 excerpt: "Minimax Algorithm에 대해 알아봅시다."
 categories: 
     - POSCO AI project
+toc: true
+toc_sticky: true
 ---
 
 

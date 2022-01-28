@@ -4,6 +4,8 @@ date: 2022-01-17
 excerpt: "Gradient Descent에 대해 알아봅시다."
 categories: 
     - AI Math
+toc: true
+toc_sticky: true
 ---
 
 # 미분 (differentiation)

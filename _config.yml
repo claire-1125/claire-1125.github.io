@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "JeongBeen Seo"
   avatar           : "/assets/images/profile/myAvatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "물리로 시작해서 IT를 거쳐 인공지능 분야로 향하고 있습니다."
+  bio              : "물리로 시작해서 IT를 거쳐<br/>인공지능 분야로 향하고 있습니다."
   location         : "South Korea"
   email            : 
   links:
