@@ -1,5 +1,5 @@
 ---
-title: "[ PyTorch ]  PyTorch Basics PART 1"
+title: "[ PyTorch ]  PyTorch Basics - part 1"
 date: 2022-01-30
 excerpt: "PyTorch 기본적인 사용법에 대해 알아봅시다."
 categories: PyTorch
@@ -8,7 +8,7 @@ toc_sticky: true
 ---
 
 
-# Numpy vs. PyTorch
+## Numpy vs. PyTorch
 
 - 보통 ndarray를 가지고 tensor를 만든다.
 
@@ -22,7 +22,7 @@ t_data = torch.from_numpy(x_data)
 - 대부분의 Numpy 연산이 **동일하게 적용**된다.
 
 
-# PyTorch의 GPU 모드
+## PyTorch의 GPU 모드
 
 - 특별히 선언하지 않으면 tensor는 기본적으로 CPU 모드이다.
 - GPU 모드를 사용하기 위해선 선언을 해야 한다.
@@ -35,7 +35,7 @@ x_data_cuda.device  # 현재 텐서의 연산 모드 출력
 ```
 
 
-# view vs. reshape
+## view vs. reshape
 
 - **차원 재구성**을 하는 함수이다.
 - contiguity 보장의 차이
@@ -82,61 +82,63 @@ tensor([[0.3129, 0.3980, 0.4659, 0.3447, 0.9292, 0.6549],
     
 
 
-# squeeze vs. unsqueeze
+## squeeze vs. unsqueeze
 
-## squeeze()
+### squeeze()
 
 - redundant한 차원 삭제
 - 즉, **차원의 개수가 1**인 차원을 **삭제**
 
-## unsqueeze()
+### unsqueeze()
 
 - redundant한 차원 추가
 - 즉, **차원의 개수가 1**인 차원을 **추가**
 
 
-# matmul vs. mm vs. @ vs. dot vs. *
 
-## matmul()
+## matmul vs. mm vs. @ vs. dot vs. *
+
+### matmul()
 
 - matrix multiplication, vector multiplication 가능 (**만능**)
 - **broadcasting 가능**
 
-## mm()
+### mm()
 
 - **matrix multiplication** 연산 가능
 - **broadcasting 불가능**
     - 즉, matrix의 shape이 정확하게 동일해야 사용 가능
 
-## @ (from Numpy)
+### @ (from Numpy)
 
 - **matrix multiplication** 연산 가능
 
-## dot (from Numpy)
+### dot (from Numpy)
 
 - **내적** 연산 가능
 - 벡터.dot(벡터)의 경우 실질적으로 matrix multiplication 진행
 - 만약 **벡터 간의 ‘내적’**을 하고 싶다면 **np.inner()**
 
-## * (from Numpy)
+### * (from Numpy)
 
 - **스칼라곱 (hadamard product)** : 같은 위치에 존재한 원소끼리의 곱
 - **broadcasting 가능**
 
 
-# [번외] 행렬곱 vs. 내적
 
-## 개념 상 차이
+## [번외] 행렬곱 vs. 내적
+
+### 개념상 차이
 
 - 계산된 행렬의 각 원소 값은 ***벡터의 내적을 표현한 것***
 - 행렬 곱은 내적의 집합
 
-## 벡터 (1차 텐서)의 경우
+### 벡터 (1차 텐서)의 경우
 
 - **행렬곱 = 내적**
 - matmul() = mm() = @ = dot()
 
-## 텐서 (2차 이상의 텐서)의 경우
+### 텐서 (2차 이상의 텐서)의 경우
 
 - **행렬곱 ≠ 내적**
 - **matmul() = mm() = @ ≠ dot()**

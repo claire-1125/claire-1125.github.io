@@ -1,5 +1,5 @@
 ---
-title: "[ Basic AI Math ]  Gradient Descent part 2"
+title: "[ Basic AI Math ]  Gradient Descent - part 2"
 date: 2022-01-17
 excerpt: "Gradient Descent에 대해 좀 더 알아봅시다."
 categories: 
