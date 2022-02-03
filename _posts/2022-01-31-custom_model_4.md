@@ -11,7 +11,7 @@ toc_sticky: true
 
 ## Module flow
 
-- 최소의 기능 단위인 **function** → function들로 이루어진 **layer** → layer로 이루어진 **model**
+- 최소의 기능 단위인 **function** → function들로 이루어진 **layer** → layer로 이루어진 **model**
 
 ### Module flow 예시
 
@@ -24,8 +24,8 @@ class func_a(nn.Module):
         super().__init__()
         self.name = name
 		
-		# 모델 구조 출력시 멤버변수도 같이 출력시키기
-		def extra_repr(self):
+	# 모델 구조 출력시 멤버변수도 같이 출력시키기
+	def extra_repr(self):
         return 'name={}'.format(self.name)
 
     def forward(self, x):
@@ -94,10 +94,10 @@ class Model(nn.Module):
         self.ab = layer_ab()
         self.cd = layer_cd()
 
-		def __doc__(self):
+	def __doc__(self):
         """
-				여기에 모듈에 대한 docstring을 작성하면 됩니다.
-				"""
+		여기에 모듈에 대한 docstring을 작성하면 됩니다.
+		"""
 
     def forward(self, x):
         x = self.ab(x)
