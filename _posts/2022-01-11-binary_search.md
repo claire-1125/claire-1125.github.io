@@ -23,7 +23,7 @@ toc_sticky: true
 ### 알고리즘
 
 ```python
-while 검사할 수가 남아있을 때까지:
+while left <= right:
 	middle = (left + right) / 2
 
 	if (찾는 수) < (middle이 가리키는 수):
@@ -38,10 +38,76 @@ while 검사할 수가 남아있을 때까지:
 
 - 예시
     
-    ![1.jpg](/assets/images/posts/data_structure/binary_search/1.jpg){:width=300}
+    ![1.jpg](/assets/images/posts/data_structure/binary_search/1.jpg){:width="300"}
     
 - 시간복잡도 : $O(logN)$
 
+
+### 재귀적 구현
+
+```python
+def BinarySearchRecursive(array, searchNum, left, right):
+    middle = (left + right) // 2
+
+    while array[left] <= array[right]:
+        if array[middle] > searchNum:
+            return BinarySearchRecursive(array, searchNum, left, middle-1)
+        elif array[middle] < searchNum:
+            return BinarySearchRecursive(array, searchNum, middle+1, right)
+        else:
+            return middle
+
+    return False
+
+# 원소의 개수, 원하는 수
+n, searchNum = map(int,input().split())
+
+nums = [elem for elem in map(int,input().split())]
+
+# 초기 설정
+left, right = 0, n-1
+
+result = BinarySearchRecursive(nums,searchNum,left,right)
+
+if not result:
+    print("원소가 존재하지 않습니다.")
+else:
+    print(result)
+```
+
+
+### 반복문 구현
+
+```python
+def BinarySearchIterative(array, searchNum, left, right):
+    while left <= right:
+        middle = (left + right) // 2
+
+        if array[middle] > searchNum:
+            right = middle -1
+            continue
+        elif array[middle] < searchNum:
+            left = middle + 1
+            continue
+        else:
+            return middle
+    return False
+
+# 원소의 개수, 원하는 수
+n, searchNum = map(int,input().split())
+
+nums = [elem for elem in map(int,input().split())]
+
+# 초기 설정
+left, right = 0, n-1
+
+result = BinarySearchIterative(nums,searchNum,left,right)
+
+if not result:
+    print("원소가 존재하지 않습니다.")
+else:
+    print(result)
+```
 
 
 
@@ -73,3 +139,11 @@ n = 5 # 삽입할 수
 bisect_left(nums, n) # 좌측에 삽입한다. 결과: 5
 bisect_right(nums, n) # 우측에 삽입한다. 결과: 6
 ```
+
+
+
+## Parametric Search
+
+- **최적화** 문제를 **결정** 문제(Yes/No)로 바꾸어 해결하는 기법
+    - 특정한 조건을 만족하는 가장 알맞은 값을 빠르게 찾는 문제를 풀 때, 탐색 범위를 좁혀가며 각 범위 내에서 조건 만족 여부를 확인하는 방식으로 값을 찾는다.
+- 이 문제는 **이진 탐색을 이용하여 해결**할 수 있다.
