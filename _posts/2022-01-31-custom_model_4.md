@@ -12,6 +12,7 @@ toc_sticky: true
 ## Module flow
 
 - 최소의 기능 단위인 **function** → function들로 이루어진 **layer** → layer로 이루어진 **model**
+- **model**은 수많은 module들이 서로 복잡하게 얽혀있는 **Graph**
 
 ### Module flow 예시
 
