@@ -44,6 +44,9 @@ Histogram을 보고 판단한다.
 
 데이터가 $\mathbb{R}$ 전체에서 값을 가지는 경우
 
+
+
+
 ## 모수 추정하기 - 정규분포
 
 ### 용어
@@ -81,16 +84,16 @@ $$
 ## Maximum Likelihood Estimation (MLE; 최대우도법)
 
 $$
-\hat{\theta}_{MLE}=\underset{\theta}{argmax}L(\theta;\bold x)=\underset{\theta}{argmax}P(\bold x|\theta)
+\hat{\theta}_{MLE}=\underset{\theta}{argmax}L(\theta;\mathbf{x})=\underset{\theta}{argmax}P(\mathbf{x}|\theta)
 $$
 
 - **모수적인(parametrix)** 데이터 밀도 추정 방법
-- 파라미터 $\theta=(\theta_1,...,\theta_m)$로 구성된 어떤 확률밀도함수 $P(\bold x|\theta)$에서 관측된 표본 데이터 집합을 $x=\{x_1,...,x_n\}$이라 할 때, 이 표본들에서 파라미터 $\theta=(\theta_1,...,\theta_m)$를 추정하는 방법
-- $L(\theta;\bold x)$ : 가능도 함수
+- 파라미터 $\theta=(\theta_1,...,\theta_m)$로 구성된 어떤 확률밀도함수 $P(\mathbf{x}|\theta)$에서 관측된 표본 데이터 집합을 $x=\{x_1,...,x_n\}$이라 할 때, 이 표본들에서 파라미터 $\theta=(\theta_1,...,\theta_m)$를 추정하는 방법
+- $L(\theta;\mathbf{x})$ : 가능도 함수
 - 데이터 집합 $\bold X$가 독립추출일 경우 **log likelihood**로 변경해서 생각할 수 있다.
     
     $$
-    L(\theta;\bold X)=\prod_{i=1}^nP(\bold x_i|\theta) \, → \, logL(\theta;\bold X)=\sum_{i=1}^nlogP(\bold x_i|\theta)
+    L(\theta;\mathbf{X})=\prod_{i=1}^nP(\mathbf{x}_i|\theta) \, → \, logL(\theta;\mathbf{X})=\sum_{i=1}^nlogP(\mathbf{x}_i|\theta)
     $$
     
     - 여기서의 $log$는 자연로그 $ln$을 의미한다.
@@ -115,13 +118,13 @@ $$
     정규분포에서의 모수는 모평균 $\mu$, 모분산 $\sigma^2$이므로 다음과 같이 적을 수 있다.
     
     $$
-    \hat{\theta}_{MLE}=\underset{\theta}{argmax}L(\theta;\bold x)=\underset{μ,\sigma^2}{argmax}P(\bold X|μ,\sigma^2)
+    \hat{\theta}_{MLE}=\underset{\theta}{argmax}L(\theta;\mathbf{x})=\underset{μ,\sigma^2}{argmax}P(\mathbf{X}|μ,\sigma^2)
     $$
     
     여기서 log likelihood를 구해보자. 정규분포의 확률밀도함수(Probability Density Function; PDF)는 **Gaussian Function**이므로 다음과 같이 표현할 수 있다.
     
     $$
-    logL(\theta;\bold X)=\sum_{i=1}^nlogP(\bold x_i|\theta)=\sum_{i=1}^nlog\frac{1}{ \sqrt{2\pi\sigma^2}}e^{-\frac{|x_i-μ|^2}{2\sigma^2}}
+    logL(\theta;\mathbf{X})=\sum_{i=1}^nlogP(\mathbf{x}_i|\theta)=\sum_{i=1}^nlog\frac{1}{ \sqrt{2\pi\sigma^2}}e^{-\frac{|x_i-μ|^2}{2\sigma^2}}
     $$
     
     이를 좀 더 간단하게 정리하면 다음과 같다. 여기서의 $log$는 $ln$임을 기억하자.
@@ -139,7 +142,7 @@ $$
     이제 likelihood가 최대가 될 수 있도록 하는 파라미터($\mu, \sigma^2$)를 찾아보자. 
     
     $$
-    logL(\theta;\bold X)=-\frac{n}{2}log2\pi\sigma^2-\sum_{i=1}^n\frac{|x_i-μ|^2}{2\sigma^2}
+    logL(\theta;\mathbf{X})=-\frac{n}{2}log2\pi\sigma^2-\sum_{i=1}^n\frac{|x_i-μ|^2}{2\sigma^2}
     $$
     
     어떤 함수의 최댓값을 구할 때 **극값**을 이용하는 경우가 많다. 따라서 양변을 편미분하자.
@@ -147,7 +150,7 @@ $$
     - 모평균 $\mu$에 대해 계산
     
     $$
-    \frac{\partial}{\partial\mu}logL(\theta;\bold X)=0
+    \frac{\partial}{\partial\mu}logL(\theta;\mathbf{X})=0
     \\ \, \\
     LHS=\frac{\partial}{\partial\mu}(-\frac{n}{2}log2\pi\sigma^2-\sum_{i=1}^n\frac{|x_i-μ|^2}{2\sigma^2})
     =-\sum_{i=1}^n\frac{x_i-\mu}{\sigma^2}
@@ -158,7 +161,7 @@ $$
     - 모분산 $\sigma^2$에 대해 계산
     
     $$
-    \frac{\partial}{\partial\sigma}logL(\theta;\bold X)=0
+    \frac{\partial}{\partial\sigma}logL(\theta;\mathbf{X})=0
     \\ \, \\
     LHS=\frac{\partial}{\partial\sigma}(-\frac{n}{2}log2\pi\sigma^2-\sum_{i=1}^n\frac{|x_i-μ|^2}{2\sigma^2})
     \\ \, \\
@@ -196,8 +199,8 @@ $$
 ## 확률분포의 거리
 
 - Loss function은 이 둘 간의 거리를 통해 MLE를 유도한다.
-    - **모델이 학습**하는 확률분포 $P(\bold x)$
-    - 데이터에서 **관찰**되는 확률분포 $Q(\bold x)$
+    - **모델이 학습**하는 확률분포 $P(\mathbf{x})$
+    - 데이터에서 **관찰**되는 확률분포 $Q(\mathbf{x})$
 - 거리를 계산할 때 사용하는 함수들
     - Total Variance Distance (TV)
     - Wasserstein Distance
@@ -209,13 +212,13 @@ $$
     - 이산확률변수
         
         $$
-        \mathbb{KL}(P\|Q)=\sum_{\bold x∈}P(\bold x)log(\frac{P(\bold x)}{Q(\bold x)})
+        \mathbb{KL}(P\|Q)=\sum_{\mathbf{x}∈}P(\mathbf{x})log(\frac{P(\mathbf{x})}{Q(\mathbf{x})})
         
         $$
         
     - 연속확률변수
         
         $$
-        \mathbb{KL}(P\|Q)=\int_{s}P(\bold x)log(\frac{P(\bold x)}{Q(\bold x)})d\bold x
+        \mathbb{KL}(P\|Q)=\int_{s}P(\mathbf{x})log(\frac{P(\mathbf{x})}{Q(\mathbf{x})})d\mathbf{x}
         
         $$
