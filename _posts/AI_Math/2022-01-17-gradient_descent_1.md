@@ -8,7 +8,8 @@ toc: true
 toc_sticky: true
 ---
 
-# 미분 (differentiation)
+
+## 미분 (differentiation)
 
 - 변화율의 극한 (순간변화량)
 - 접선의 기울기
@@ -22,7 +23,7 @@ toc_sticky: true
     ```
     
 
-# 경사하강법 (Gradient Descent)
+## 경사하강법 (Gradient Descent)
 
 $$
 w ← w - α\frac{∂Loss}{∂w}

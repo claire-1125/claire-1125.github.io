@@ -9,7 +9,7 @@ toc_sticky: true
 ---
 
 
-# 선형회귀
+## Linear Regression
 ![1.png](/assets/images/posts/AI_Math/gradient_descent_2/1.png){: width="400"}
 
 데이터가 분포되어 있을 때 **선형적(~직선)으로 근사**해서 데이터를 설명하려 한다.
@@ -19,13 +19,15 @@ toc_sticky: true
 - $\underset{β}{min} \operatorname{E} \|y-\hat{y}\|_2$ : $y$(실제 정답)과 $\hat{y}$(만든 모델)의 **잔차 (여기서는 $L_2$ norm)가 최소한**이 되도록 하는 $\hat{y}$를 구해야 한다.  
 
 
-# 경사하강법 기반으로 선형회귀 계수 구하기
+
+
+## Gradient Descent 기반 Linear Regression - 회귀계수 구하기
 
 $$
 {\underset{β}{argmin}} \,\operatorname{E} \|y-Xβ\|_2 
 $$
 
-## 기본 사항
+### 기본 사항
 
 $$
 y = \begin{vmatrix} 
@@ -63,7 +65,7 @@ x_{n1}β_1 + x_{n2}β_2 +...+ x_{nm}β_m \\
 $$
 
 
-## 이를 위한 gradient 벡터
+### 이를 위한 gradient 벡터
 
 - Gradient는 기울기 변화량의 최대(혹은 최소)가 되는 지점!
 - 식 정리
@@ -110,7 +112,7 @@ $$
     $$
     
 
-## 드디어 Gradient Descent!
+### 드디어 Gradient Descent!
 
 $$
 β^{(t+1)}←β^{(t)}-λ∇_β\|y-Xβ^{(t)}\|
@@ -130,7 +132,7 @@ $$
 
 
 
-# 경사하강법 기반 선형회귀 알고리즘
+## Gradient Descent 기반 Linear Regression - 알고리즘
 
 ```python
 """
@@ -151,7 +153,7 @@ for t in range(T):
 ```
 
 
-# 경사하강법의 한계점
+## Gradient Descent의 한계점
 
 - diffirentiable & convex → convergent!
     
@@ -161,7 +163,7 @@ for t in range(T):
 
 
 
-# 확률적 경사하강법 (Stochastic Gradient Descent)
+## Stochastic Gradient Descent
 
 - 모든 데이터 $(X,y)$가 아닌 mini batch $(X_{(b)},y_{(b)})$만큼 사용해서 업데이트하는 방식
 
@@ -171,7 +173,7 @@ $$
 
 - 연산량이 $b/n$로 감소한다.
 
-## Mini Batch
+### Mini Batch
 
 ![2.png](/assets/images/posts/AI_Math/gradient_descent_2/3.png){: width="400"}
 
