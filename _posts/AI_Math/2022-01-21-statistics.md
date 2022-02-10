@@ -88,9 +88,9 @@ $$
 $$
 
 - **모수적인(parametrix)** 데이터 밀도 추정 방법
-- 파라미터 $\theta=(\theta_1,...,\theta_m)$로 구성된 어떤 확률밀도함수 $P(\mathbf{x}|\theta)$에서 관측된 표본 데이터 집합을 $x=\{x_1,...,x_n\}$이라 할 때, 이 표본들에서 파라미터 $\theta=(\theta_1,...,\theta_m)$를 추정하는 방법
+- 파라미터 $\theta=(\theta_{1},...,\theta_{m})$로 구성된 어떤 확률밀도함수 $P(\mathbf{x}|\theta)$에서 관측된 표본 데이터 집합을 $x=\{x_1,...,x_n\}$이라 할 때, 이 표본들에서 파라미터 $\theta=(\theta_{1},...,\theta_{m})$를 추정하는 방법
 - $L(\theta;\mathbf{x})$ : 가능도 함수
-- 데이터 집합 $\bold X$가 독립추출일 경우 **log likelihood**로 변경해서 생각할 수 있다.
+- 데이터 집합 $\mathbf{X}$가 독립추출일 경우 **log likelihood**로 변경해서 생각할 수 있다.
     
     $$
     L(\theta;\mathbf{X})=\prod_{i=1}^nP(\mathbf{x}_i|\theta) \, → \, logL(\theta;\mathbf{X})=\sum_{i=1}^nlogP(\mathbf{x}_i|\theta)
