@@ -16,9 +16,9 @@ toc_sticky: true
     - 프로그램 추가 기능 제공
 - 종류
     - pre-hook  
-      **기존**의 프로그램이 **실행되기 전 수행**
+      - **기존**의 프로그램이 **실행되기 전 수행**
     - hook  
-      **기존**의 프로그램이 **실행되고 난 후 수행**
+      - **기존**의 프로그램이 **실행되고 난 후 수행**
 - 사용 방법
     
     ```python
@@ -41,7 +41,7 @@ toc_sticky: true
 
 ### backward hook
 - 종류  
-  hook → **register_hook()**
+  - hook → **register_hook()**
 - 예시
     
     ```python
@@ -123,7 +123,7 @@ toc_sticky: true
         
 ### backward hook
 - 종류  
-  hook → **register_full_backward_hook()**
+  - hook → **register_full_backward_hook()**
 - 예시
     
     ```python
