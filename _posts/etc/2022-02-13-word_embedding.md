@@ -35,9 +35,9 @@ toc_sticky: true
     \end{bmatrix}$
     - weight matrix : $\begin{bmatrix}
     5.1&-0.3&0.1&3.2&1.3
-    \\-1&7.5&-2&3.4&0.5
-    \\1.2&27&0.4&-1&2.8
-    \\1&-5&2.1&0.2&11
+    \\ -1&7.5&-2&3.4&0.5
+    \\ 1.2&27&0.4&-1&2.8
+    \\ 1&-5&2.1&0.2&11
     \end{bmatrix}$
     - embedding vector : one-hot vector·weight matrix = $\begin{bmatrix}
     1.2&27&0.4&-1&2.8
