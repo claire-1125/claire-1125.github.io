@@ -21,9 +21,7 @@ t_data = torch.from_numpy(x_data)
 - 기본적으로 tensor가 가질 수 있는 data type은 **Numpy와 동일**하다.
 - 대부분의 Numpy 연산이 **동일하게 적용**된다.  
 
-
-
-
+<br/><br/>
 
 ## PyTorch의 GPU 모드
 
@@ -36,10 +34,7 @@ if torch.cuda.is_available():
   x_data_cuda = x_data.to('cuda')
 x_data_cuda.device  # 현재 텐서의 연산 모드 출력
 ```  
-
-
-
-
+<br/><br/>
 
 ## view vs. reshape
 
