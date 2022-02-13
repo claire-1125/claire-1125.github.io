@@ -14,7 +14,7 @@ toc_sticky: true
 - Forward의 결과값 (=model의 output=예측치)과 실제값 간의 **차이(loss) 에 대해 미분**을 수행
     - 해당 값으로 **Parameter 업데이트**
 
-
+<br/>
 
 ## AutoGrad
 
@@ -33,6 +33,8 @@ z = 10*y + 25
 z.backward()  # backward() : 현재 tensor의 gradient 계산
 w.grad  # gradient 함수값
 ```
+
+<br/>
 
 ## Linear Regression with AutoGrad
 

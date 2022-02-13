@@ -34,7 +34,8 @@ if torch.cuda.is_available():
   x_data_cuda = x_data.to('cuda')
 x_data_cuda.device  # 현재 텐서의 연산 모드 출력
 ```  
-<br/><br/>
+
+<br/>
 
 ## view vs. reshape
 
@@ -80,9 +81,8 @@ tensor([[0.3129, 0.3980, 0.4659, 0.3447, 0.9292, 0.6549],
     > (1, 3)  # 기존의 stride를 단순히 swap한 형태이다. (실제로는 아님.)
     > False
     ```
-    
-
-
+ 
+<br/>
 
 ## squeeze vs. unsqueeze
 
@@ -96,7 +96,7 @@ tensor([[0.3129, 0.3980, 0.4659, 0.3447, 0.9292, 0.6549],
 - redundant한 차원 추가
 - 즉, **차원의 개수가 1**인 차원을 **추가**
 
-
+<br/>
 
 ## matmul vs. mm vs. @ vs. dot vs. *
 
@@ -126,8 +126,8 @@ tensor([[0.3129, 0.3980, 0.4659, 0.3447, 0.9292, 0.6549],
 - **스칼라곱 (hadamard product)** : 같은 위치에 존재한 원소끼리의 곱
 - **broadcasting 가능**
 
-
-
+<br/>  
+  
 ## [번외] 행렬곱 vs. 내적
 
 ### 개념상 차이

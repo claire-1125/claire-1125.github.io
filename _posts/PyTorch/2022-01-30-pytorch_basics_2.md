@@ -20,6 +20,7 @@ toc_sticky: true
 - **torch** 데이터 입력 → **원본** 사용
 - **list, numpy** 데이터 입력 → **복사**하여 새롭게 torch.Tensor를 만든 후 사용
 
+<br/>
 
 ## Indexing
 
@@ -92,6 +93,7 @@ torch.Tensor([[1, 4], [5, 8]])
 """
 ```
 
+<br/>
 
 ## torch.zeros() vs. torch.zeros_like()
 

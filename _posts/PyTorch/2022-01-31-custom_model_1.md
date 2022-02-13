@@ -13,6 +13,8 @@ toc_sticky: true
 - PyTorch의 **Neural Network 패키지**
 - graph를 만들기 위한 basic building blocks
 
+<br/>
+
 ## nn.Linear()
 
 - linear transformation ($y=xA^T+b$) 해주는 함수
@@ -32,6 +34,7 @@ torch.Size([2, 5])
 """
 ```
 
+<br/>
 
 ## torch.nn vs. torch.nn.functional
 
@@ -43,7 +46,7 @@ torch.Size([2, 5])
 
 - python class
 
-
+<br/>
 
 ## torch.nn.Module
 
@@ -58,7 +61,7 @@ torch.Size([2, 5])
 - 속성과 기능을 함께 캡슐화함으로써 데이터를 담고 있는 객체 (일종의 **클래스**)
 - python 내장 컨테이너 타입 : list, tuple, set, dictionary
 
-
+<br/>
 
 ## torch.nn.Parameter
 
@@ -67,7 +70,7 @@ torch.Size([2, 5])
 - 직접 지정할 일은 거의 없다. (대부분의 layer에는 weights 값들이 지정되어 있다.)
 - 파라미터 (weight, bias)를 그냥 tensor로 만들면 gradient를 계산하지 않아 값도 **업데이트 되지 않고**, 모델을 저장할 때 **무시된다.**
 
-
+<br/>
 
 ## Buffer
 
@@ -96,7 +99,7 @@ except:
     print("버퍼에 저장된 값이 없습니다.")
 ```
 
-
+<br/>
 
 ## Tensor vs. Parameter vs. Buffer
 
