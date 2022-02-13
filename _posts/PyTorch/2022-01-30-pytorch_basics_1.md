@@ -22,6 +22,9 @@ t_data = torch.from_numpy(x_data)
 - 대부분의 Numpy 연산이 **동일하게 적용**된다.  
 
 
+
+
+
 ## PyTorch의 GPU 모드
 
 - 특별히 선언하지 않으면 tensor는 기본적으로 CPU 모드이다.
@@ -32,7 +35,10 @@ t_data = torch.from_numpy(x_data)
 if torch.cuda.is_available():
   x_data_cuda = x_data.to('cuda')
 x_data_cuda.device  # 현재 텐서의 연산 모드 출력
-```
+```  
+
+
+
 
 
 ## view vs. reshape
