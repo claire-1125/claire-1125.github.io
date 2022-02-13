@@ -27,7 +27,7 @@ t_data = torch.from_numpy(x_data)
 
 - 특별히 선언하지 않으면 tensor는 기본적으로 CPU 모드이다.
 - GPU 모드를 사용하기 위해선 선언을 해야 한다.
-    - torch.Tensor.to() : 해당 텐서를 특정 연산 모드(CPU, GPU)와 특정 자료형으로 변환한다.
+    - torch.Tensor.to() : 해당 텐서를 특정 연산 모드(CPU, GPU)와 특정 자료형으로 <br/>변환한다.
 
 ```python
 if torch.cuda.is_available():
@@ -56,7 +56,7 @@ tensor([[0.3129, 0.3980, 0.4659, 0.3447, 0.9292, 0.6549],
 ```
 
 - contiguous vs. non-contiguous
-    - stride : 새로운 row로 가기 위해 3칸 skip, 새로운 column으로 가기 위해 1칸 skip해야 한다.
+    - stride : 새로운 row로 가기 위해 3칸 skip, 새로운 column으로 가기 위해 1칸 <br/>skip해야 한다.
     - 실제로 메모리에는  `[0, 1, 2, 3, ...]` 라는 식으로 sequential하게 저장된다.
     
     ```python

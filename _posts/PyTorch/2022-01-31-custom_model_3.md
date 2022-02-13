@@ -11,7 +11,7 @@ toc_sticky: true
 ## torch.nn.backward
 
 - Layer에 있는 **Parameter들의 미분**을 수행
-- Forward의 결과값 (=model의 output=예측치)과 실제값 간의 **차이(loss) 에 대해 미분**을 수행
+- Forward의 결과값 (=model의 output=예측치)과 실제값 간의 **차이(loss) 에 대해 <br/>미분**을 수행
     - 해당 값으로 **Parameter 업데이트**
 
 <br/>
