@@ -15,7 +15,9 @@ toc_sticky: true
 - 일반적으로 **Weight Initialization**에 많이 사용한다.
 - 호출하면 apply가 **적용된** module을 return 해준다.
 
-### model tree 예제
+<br/>
+
+## model tree 예제
 
 - 앞으로는 이 예제를 기반으로 설명을 이어나갈 예정이다.
 
@@ -97,10 +99,11 @@ model = Model()
 
 - model tree의 구조
     
-    ![1.jpg](/assets/images/posts/PyTorch/custom_model/1.jpg){:width="300"}
-    
+    ![1.jpg](/assets/images/posts/PyTorch/custom_model/1.jpg){:width="400"}
 
-### apply의 적용 순서
+<br/>  
+
+## apply의 적용 순서
 
 - apply는 **post-order traversal** 방식으로 module에 함수를 적용한다.
 
@@ -146,13 +149,14 @@ Model(
 ```
 
 - post-order traversal?
-    - [이진트리순회](https://claire-1125.github.io/%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0/tree/#%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC-%EC%88%9C%ED%9A%8C)
+    - [이진트리순회](/데이터구조/tree/#이진트리-순회C)
     - 순회 순서 : func_a → func_b → layer_ab → func_c → func_d → layer_cd → Model
             
         ![1.jpg](/assets/images/posts/PyTorch/custom_model/1.jpg){:width="300"}
             
+<br/>
 
-### Weight Initialization
+## Weight Initialization
 
 ```python
 model = Model()

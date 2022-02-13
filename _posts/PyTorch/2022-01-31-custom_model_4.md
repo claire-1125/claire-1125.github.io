@@ -114,6 +114,8 @@ model(x)
 """
 ```
 
+<br/>
+
 ## named_children vs. named_modules
 
 ### named_children
@@ -204,6 +206,8 @@ func_d()
 """
 ```
 
+<br/>
+
 ## get_submodule
 
 - 특정 모듈만 가져오고 싶을 때 사용한다.
@@ -216,6 +220,8 @@ submodule.__class__.__name__
 출력결과 : func_a
 """
 ```
+
+<br/>
 
 ## named_parameters
 
@@ -251,6 +257,8 @@ tensor([5.], requires_grad=True)
 """
 ```
 
+<br/>
+
 ## get_parameter
 
 - 특정 파라미터만 가져오고 싶을 때 사용한다.
@@ -263,6 +271,8 @@ parameter
 출력결과 : 10
 """
 ```
+
+<br/>
 
 ## named_buffers
 
@@ -281,6 +291,8 @@ for name, buffer in model.named_buffers():
 ------------------------------
 """
 ```
+
+<br/>
 
 ## get_buffer
 
