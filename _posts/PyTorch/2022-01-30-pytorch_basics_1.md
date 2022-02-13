@@ -19,7 +19,7 @@ t_data = torch.from_numpy(x_data)
 ```
 
 - 기본적으로 tensor가 가질 수 있는 data type은 **Numpy와 동일**하다.
-- 대부분의 Numpy 연산이 **동일하게 적용**된다.
+- 대부분의 Numpy 연산이 **동일하게 적용**된다.  
 
 
 ## PyTorch의 GPU 모드
@@ -80,6 +80,7 @@ tensor([[0.3129, 0.3980, 0.4659, 0.3447, 0.9292, 0.6549],
     > False
     ```
     
+
 
 
 ## squeeze vs. unsqueeze
