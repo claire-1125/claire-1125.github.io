@@ -18,6 +18,7 @@ P(A∩B) = P(B)P(A|B)
 $$
 
 - 조건부 확률을 이용해서 **정보를 갱신**할 수 있다.
+
     - A라는 새로운 정보가 주어졌을 때 $P(B)$로부터 $P(B|A)$를 계산하는 방법을 제공한다.
 
         $$
@@ -36,30 +37,33 @@ $$
     - 확률 : 주장에 대한 **신뢰도**
 - 용어
     - $P(B|A)$ : 사후확률 (posterior) - 새로운 사건이 발생했을 때 기존 사건이 발생할 확률
+
     - $P(B)$ : 사전확률 (prior) - 기존의 사건이 발생할 확률
+
     - $P(A|B)$ : 가능도(likelihood) - 기존의 사건이 발생했을 때 새로운 사건이 발생할 확률
+
     - $P(A)$ : evidence - 새로운 사건이 발생할 확률
 - 예제)
     
     <aside>
 
-        - 사건 A : COVID-19 양성이라고 검진
-        - 사건 B : COVID-19 발병
+        - 사건 A : COVID-19 양성이라고 검진  
+        - 사건 B : COVID-19 발병  
 
-        - COVID-19의 발병률 = 10%
+        - COVID-19의 발병률 = 10%  
             
-            $P(B)=0.1$
+            $P(B)=0.1$  
             
-        - COVID-19 걸렸을 때 검진될 확률 = 99%
+        - COVID-19 걸렸을 때 검진될 확률 = 99%  
             
-            $P(A|B)=0.99$
+            $P(A|B)=0.99$  
             
-        - COVID-19 걸리지 않았을 때 오검진될 확률 10%
+        - COVID-19 걸리지 않았을 때 오검진될 확률 10%  
             
-            $P(A|\neg B)=0.1$
+            $P(A|\neg B)=0.1$  
             
 
-        **Q. COVID-19 양성이라고 검진결과가 나왔을 때, 정말로 COVID-19에 걸렸을 확률?**
+        Q. COVID-19 양성이라고 검진결과가 나왔을 때, 정말로 COVID-19에 걸렸을 확률?
     
     </aside>
     
@@ -67,9 +71,9 @@ $$
         
         <aside>
         
-            $P(B)$, $P(A|B)$, $P(A|\neg B)$가 주어진 상태이고, $P(B|A)$를 구해야 되는 상황
-            $P(A)$를 알아내야 하는데 $P(A|B)$, $P(A|\neg B)$, $P(B)$를 이용하면 구할 수 있다.
-            $P(A)=P(A∩B)+P(A∩\neg B)=P(A|B)P(B)+P(A|\neg B)P(\neg B)=0.189$
+            $P(B)$, $P(A|B)$, $P(A|\neg B)$가 주어진 상태이고, $P(B|A)$를 구해야 되는 상황  
+            $P(A)$를 알아내야 하는데 $P(A|B)$, $P(A|\neg B)$, $P(B)$를 이용하면 구할 수 있다.  
+            $P(A)=P(A∩B)+P(A∩\neg B)=P(A|B)P(B)+P(A|\neg B)P(\neg B)=0.189$  
             
             ∴ $P(B|A)≈0.524$
         
@@ -82,8 +86,11 @@ $$
 ![Untitled](/assets/images/posts/AI_Math/bayes_statistics/1.png){:width="400"}
 
 - $P(\mathscr{D}|\theta)$ : 기존의 사건이 발생했을 때 새로운 사건이 발생했다는 것에 대한 신뢰도
+
     - likelihood = **recall**
+
 - $P(\theta|\mathscr{D})$ : 새로운 사건이 발생했을 때 기존 사건이 발생했다는 것에 대한 신뢰도
+
     - posterier probability = **precision**
 
 <br/>
