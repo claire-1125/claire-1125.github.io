@@ -3,7 +3,7 @@ title: "[ Basic AI Math ]  Statistics"
 date: 2022-01-21
 excerpt: "통계학에 대해 가볍게 알아봅시다."
 categories: 
-    - AI_Math
+    - math4AI
 toc: true
 toc_sticky: true
 ---

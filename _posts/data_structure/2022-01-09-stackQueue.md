@@ -3,7 +3,7 @@ title: "[ 데이터구조 ]  Stack, Queue"
 date: 2022-01-09
 excerpt: "stack과 queue에 대해 알아봅시다."
 categories: 
-    - Data_Structure
+    - DataStructure
 toc: true
 toc_sticky: true
 ---

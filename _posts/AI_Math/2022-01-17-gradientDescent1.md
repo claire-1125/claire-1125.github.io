@@ -3,7 +3,7 @@ title: "[ Basic AI Math ]  Gradient Descent - part 1"
 date: 2022-01-17
 excerpt: "Gradient Descent에 대해 알아봅시다."
 categories: 
-    - AI_Math
+    - math4AI
 toc: true
 toc_sticky: true
 ---

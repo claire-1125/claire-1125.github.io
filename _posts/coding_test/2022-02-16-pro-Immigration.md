@@ -3,7 +3,7 @@ title: "[ 프로그래머스 ]  입국심사 (Python)"
 date: 2022-02-16
 excerpt: "이진탐색(binary search)을 이용해 가장 빨리 입국심사를 끝낼 수 있는 시간을 찾아봅시다."
 categories: 
-    - Coding_Test
+    - CodingTest
 toc: true
 toc_sticky: true
 ---
