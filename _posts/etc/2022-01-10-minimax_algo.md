@@ -1,9 +1,9 @@
 ---
-title: "[ 딥러닝 ]  Minimax Algorithm"
+title: "[ 이것저것 ]  Minimax Algorithm"
 date: 2022-01-10
-excerpt: "GAN의 상위개념인 Minimax Algorithm에 대해 알아봅시다."
+excerpt: "Minimax Algorithm에 대해 알아봅시다."
 categories: 
-    - Deep Learning
+    - Miscellaneous
 toc: true
 toc_sticky: true
 ---

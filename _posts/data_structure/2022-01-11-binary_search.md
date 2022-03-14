@@ -3,7 +3,7 @@ title: "[ 데이터구조 ]  Binary Search"
 date: 2022-01-11
 excerpt: "이진탐색에 대해 알아봅시다."
 categories: 
-    - Data Structure
+    - Data_Structure
 toc: true
 toc_sticky: true
 ---

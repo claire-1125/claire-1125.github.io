@@ -3,7 +3,7 @@ title: "[ 딥러닝 ]  Regularization"
 date: 2022-02-08
 excerpt: "Regularization을 위한 다양한 기법에 대해 알아봅시다."
 categories: 
-    - Deep Learning
+    - Deep_Learning
 toc: true
 toc_sticky: true
 ---

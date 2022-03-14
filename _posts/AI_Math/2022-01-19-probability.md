@@ -3,7 +3,7 @@ title: "[ Basic AI Math ]  Probability"
 date: 2022-01-19
 excerpt: "probability에 대해 가볍게 알아봅시다."
 categories: 
-    - AI Math
+    - AI_Math
 toc: true
 toc_sticky: true
 ---

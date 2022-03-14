@@ -3,7 +3,7 @@ title: "[ 딥러닝 ]  CNN case study"
 date: 2022-02-07
 excerpt: "CNN 기반의 모델에 대해 알아봅시다."
 categories: 
-    - Deep Learning
+    - Deep_Learning
 toc: true
 toc_sticky: true
 ---

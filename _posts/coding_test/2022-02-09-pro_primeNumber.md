@@ -3,7 +3,7 @@ title: "[ 프로그래머스 ]  소수 찾기 (Python)"
 date: 2022-02-09
 excerpt: "완전탐색(brute force)을 이용해서 소수를 찾아봅시다."
 categories: 
-    - Coding Test
+    - Coding_Test
 toc: true
 toc_sticky: true
 ---
