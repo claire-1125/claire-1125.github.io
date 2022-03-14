@@ -155,7 +155,7 @@ for t in range(T):
 
 ## Gradient Descent의 한계점
 
-- diffirentiable & convex → convergent!
+- diffirentiable + convex → convergent!
     
     e.g.) linear regression
     

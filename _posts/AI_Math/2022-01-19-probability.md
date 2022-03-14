@@ -31,7 +31,7 @@ toc_sticky: true
 - $P(x|y)$ : 조건부 확률분포  
 
 
-### 이산확률변수 & 연속확률변수  
+### 이산확률변수, 연속확률변수  
 
 확률분포 $\mathscr{D}$에 따라 두 가지로 나뉜다.
 
@@ -95,7 +95,7 @@ $$
 
 - $x^{(i)}$는 **i.i.d.**를 따른다.  
 
-    - i.i.d. (independent & identically distribution; 독립항등분포)  
+    - i.i.d. (independent + identically distribution; 독립항등분포)  
         
         - 확률변수가 상호독립적이며 모두 동일한 확률분포를 가지는 상황  
         

@@ -8,7 +8,7 @@ toc_sticky: true
 ---
 
 ## 스택 (Stack)
-![1.jpg](/assets/images/posts/data_structure/stack&queue/1.jpg){: width="400"}
+![1.jpg](/assets/images/posts/data_structure/stackQueue/1.jpg){: width="400"}
 
 
 - **LIFO (last-in first-out)** : 가장 늦게 들어간 얘가 가장 먼저 나간다. e.g.) 돌탑쌓기
@@ -20,7 +20,7 @@ toc_sticky: true
 
 
 ## 큐 (Queue)
-![2.jpg](/assets/images/posts/data_structure/stack&queue/2.jpg){: width="400"}
+![2.jpg](/assets/images/posts/data_structure/stackQueue/2.jpg){: width="400"}
 
 
 - **FIFO (first-in first-out)** : 뒤로 들어와서 앞으로 나간다. e.g.) 한줄서기
@@ -37,7 +37,7 @@ toc_sticky: true
 - **들어올 땐 마음대로지만 나갈 땐 아니란다.**
 
 ### 덱 (Deque)
-![3.jpg](/assets/images/posts/data_structure/stack&queue/3.jpg){: width="400"}
+![3.jpg](/assets/images/posts/data_structure/stackQueue/3.jpg){: width="400"}
 
 - double ended queue
 - 큐의 **front와 rear**에서 모두 **삽입·삭제**가 가능한 큐
