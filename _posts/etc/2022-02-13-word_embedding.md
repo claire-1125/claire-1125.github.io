@@ -3,7 +3,7 @@ title: "[ 이것저것 ]  Word Embedding"
 date: 2022-02-13
 excerpt: "word embedding에 대해 알아봅시다."
 categories: 
-    - - Miscellaneous
+    - Miscellaneous
 toc: true
 toc_sticky: true
 ---
